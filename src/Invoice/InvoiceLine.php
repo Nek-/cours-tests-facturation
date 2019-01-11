@@ -41,6 +41,11 @@ class InvoiceLine
         $this->vat = $vat;
     }
 
+    public function getVat()
+    {
+        return $this->vat;
+    }
+
     public function calculateTotal()
     {
         $amount = $this->amount;

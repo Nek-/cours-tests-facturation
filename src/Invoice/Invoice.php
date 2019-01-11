@@ -17,9 +17,19 @@ class Invoice
     /**
      * @param InvoiceLine $line
      */
-    public function add(InvoiceLine $line)
+    public function addLine(InvoiceLine $line)
     {
         $this->lines[] = $line;
+    }
+
+    public function setLines($lines)
+    {
+        $this->lines = $lines;
+    }
+
+    public function getLines()
+    {
+        return $this->lines;
     }
 
     /**
