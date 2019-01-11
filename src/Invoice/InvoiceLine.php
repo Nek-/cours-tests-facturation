@@ -9,7 +9,7 @@ class InvoiceLine
     private $vat;
 
 
-    public function __construct($amount, $description, $vat)
+    public function __construct($amount = null, $description = null, $vat = null)
     {
         $this->amount = $amount;
         $this->description = $description;
